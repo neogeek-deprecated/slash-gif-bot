@@ -6,5 +6,9 @@
   },
   "dependencies": {
     "restify": "4.1.1"
+  },
+  "devDependencies": {
+    "@neogeek/eslint-config-standards": "1.1.0",
+    "eslint": "3.4.0"
   }
 }

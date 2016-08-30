@@ -1,3 +1,5 @@
+/* eslint no-sync: 0 */
+
 const fs = require('fs');
 
 const restify = require('restify');
@@ -9,7 +11,11 @@ const JSON_FILE_REGEX = /\.json$/;
 const datasets = Object.assign({}, ...fs.readdirSync('data/')
     .filter((file) => file.match(JSON_FILE_REGEX))
     .map((file) => {
-        return {[file.replace(JSON_FILE_REGEX, '')]: JSON.parse(fs.readFileSync(`data/${file}`, 'utf8'))};
+
+        return {
+            [file.replace(JSON_FILE_REGEX, '')]:
+                JSON.parse(fs.readFileSync(`data/${file}`, 'utf8'))};
+
     }));
 
 const server = restify.createServer();
