@@ -5,10 +5,10 @@
     "node": ">=6.0"
   },
   "dependencies": {
-    "restify": "4.1.1"
+    "restify": "4.3.0"
   },
   "devDependencies": {
-    "@neogeek/eslint-config-standards": "1.2.0",
-    "eslint": "3.4.0"
+    "@neogeek/eslint-config-standards": "1.13.0",
+    "eslint": "3.15.0"
   }
 }
