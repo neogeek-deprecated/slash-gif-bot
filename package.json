@@ -1,14 +1,13 @@
 {
-  "title": "slash-gif-bot",
-  "private": true,
+  "name": "slash-gif-bot",
   "engines": {
-    "node": ">=6.0"
+    "node": ">=12.0"
   },
   "dependencies": {
-    "restify": "4.1.1"
+    "restify": "8.5.1"
   },
-  "devDependencies": {
-    "@neogeek/eslint-config-standards": "1.2.0",
-    "eslint": "3.4.0"
-  }
+  "scripts": {
+    "start": "node web.js"
+  },
+  "private": true
 }
